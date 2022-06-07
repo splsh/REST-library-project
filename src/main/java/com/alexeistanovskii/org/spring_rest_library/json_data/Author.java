@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class Author implements Serializable {
     String firstName;
     @JsonProperty
     @SerializedName("authorlast")
+    @Pattern(regexp = "[a-zA-Z]+", message = "English letters, not blank")
     String lastName;
 //    @JsonProperty
 //    @SerializedName("works")

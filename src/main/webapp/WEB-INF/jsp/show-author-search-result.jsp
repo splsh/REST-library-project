@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath}/css/style.css"/>
 </head>
 <body>
 <h1>Finished</h1>
@@ -28,7 +26,6 @@ Result:
 
 
 <ul>
-
     <c:forEach var="author" items="${answer.authorList}">
     <li>
             ${author}
@@ -36,8 +33,6 @@ Result:
     </c:forEach>
 
     </ul>>
-
-
 </body>
 
 </html>
